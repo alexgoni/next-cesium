@@ -1,0 +1,41 @@
+{
+  "name": "next",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "postinstall": "symlink-dir node_modules/cesium/Build/Cesium public/cesium"
+  },
+  "dependencies": {
+    "@react-three/drei": "^9.80.9",
+    "@react-three/fiber": "^8.13.7",
+    "babylonjs": "^6.18.0",
+    "cesium": "^1.101.0",
+    "next": "13.1.6",
+    "react": "18.2.0",
+    "react-babylonjs": "^3.1.20",
+    "react-dom": "18.2.0",
+    "resium": "^1.17.1",
+    "three": "^0.155.0"
+  },
+  "devDependencies": {
+    "@babylonjs/core": "^6.18.0",
+    "@babylonjs/loaders": "^6.18.0",
+    "autoprefixer": "^10.4.15",
+    "eslint": "8.33.0",
+    "eslint-config-next": "13.1.6",
+    "postcss": "^8.4.28",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.3",
+    "symlink-dir": "^5.1.0",
+    "tailwindcss": "^3.3.3"
+  },
+  "prettier": {
+    "plugins": [
+      "prettier-plugin-tailwindcss"
+    ]
+  }
+}
