@@ -24,6 +24,8 @@ import {
   useCesium,
 } from "resium";
 
+// Vanilla + resium
+
 function SetOption() {
   const { viewer } = useCesium();
   viewer.scene.screenSpaceCameraController.maximumZoomDistance = 6378137 * 5;
@@ -38,7 +40,7 @@ function SetOption() {
           roll: 0.0, // 회전 값
         },
       });
-    }
+    },
   );
   //   viewer.scene.primitives.add(createOsmBuildings()); // vue와 마찬가지로 지도 깨짐 현상
   const position1 = Cartesian3.fromDegrees(127.3, 37.48, 0);
